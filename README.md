@@ -24,7 +24,7 @@ pytest --alluredir AllureReports Test_dir
 ```  
 5. Run the command (to convert JSON files in HTML)  
 ``` shell
-allure serve <path to Report dir>  
+allure serve AllureReports  
 ```
 ### Pytest report
 **pytest-html-reporter==0.2.9** lib
