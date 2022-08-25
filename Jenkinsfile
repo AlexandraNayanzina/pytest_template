@@ -12,6 +12,7 @@ pipeline {
                 '''
             }
         }
+    }
     post('Allure reports') {
         always {
             script {
@@ -24,7 +25,5 @@ pipeline {
               ])
             }
           }
-        }
-
     }
 }
