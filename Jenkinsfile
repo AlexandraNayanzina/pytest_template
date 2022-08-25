@@ -19,7 +19,7 @@ pipeline {
         always {
             script {
               allure([
-                includeProperties: true,
+                includeProperties: false,
                 jdk: '',
                 properties: [],
                 reportBuildPolicy: 'ALWAYS',
