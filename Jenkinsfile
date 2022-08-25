@@ -8,6 +8,7 @@ pipeline {
                     source  venv/bin/activate
                     pip install -r requirements.txt
                     pytest --alluredir AllureReports Test_dir
+                    open pytest_html_report.html
                 '''
             }
         }
