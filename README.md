@@ -20,7 +20,7 @@ npm install -g allure-commandline --save-dev
 3. Create dir to save reports (in JSON format) 
 4. Run the command
 ``` shell
-pytest --alluredir <path to Report dir> <dir with tests>
+pytest --alluredir AllureReports Test_dir
 ```  
 5. Run the command (to convert JSON files in HTML)  
 ``` shell
