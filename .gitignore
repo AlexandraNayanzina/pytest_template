@@ -1,1 +1,8 @@
 /venv/
+/output.json
+/pytest_html_report.html
+/Test_dir/.pytest_cache/
+/archive/
+/AllureReports/
+/.idea/workspace.xml
+/.idea
