@@ -29,7 +29,12 @@ allure serve <path to Report dir>
 ### Pytest report
 **pytest-html-reporter==0.2.9** lib
 
+### Git
+username: alexandranayanzina@gmail.com
+pass:AlexTest2021
 
+
+sh 'python --version'
 
 
 
