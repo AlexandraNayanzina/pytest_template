@@ -7,7 +7,7 @@ pipeline {
                     python3 -m venv venv
                     source  venv/bin/activate
                     pip install -r requirements.txt
-                    pytest --alluredir AllureReports Test_dir
+                    pytest -v -s --alluredir AllureReports Test_dir
                 '''
             }
         }
@@ -16,7 +16,7 @@ pipeline {
         always {
             script {
               allure([
-                includeProperties: false,
+                includeProperties: true,
                 jdk: '',
                 properties: [],
                 reportBuildPolicy: 'ALWAYS',
