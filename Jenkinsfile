@@ -1,20 +1,9 @@
 pipeline {
-    agent any
     stages {
-        stage('Env initialization') {
+        stage('build') {
             steps {
-                echo 'python --version'
+                sh 'python --version'
             }
         }
-        stage('Tests run') {
-            steps {
-                echo 'Tests run stage'
-            }
-        }
-    }
-    post('Reports stage') {
-        steps {
-                echo 'Post stage'
-            }
     }
 }
