@@ -9,7 +9,7 @@ pip install -r requirements.txt
 ```
 
 ### Allure reporting
-1. Instal **allure-pytest** modul (create report in JSON format)
+1. Install **allure-pytest** modul (create report in JSON format)
 2. Converting JSON filed to HTML report  
 -- Install Java 8+  
 -- Install node.js  
