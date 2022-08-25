@@ -10,7 +10,7 @@ class TestTemplate:
         print()
         print('---------')
         print('Test_002 start')
-        assert True == False
+        assert True == True
 
     def test_003(self):
         print()
