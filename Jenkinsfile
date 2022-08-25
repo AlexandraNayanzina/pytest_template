@@ -12,5 +12,19 @@ pipeline {
                 '''
             }
         }
+    post('Allure reports') {
+        always {
+            script {
+              allure([
+                includeProperties: true,
+                jdk: '',
+                properties: [],
+                reportBuildPolicy: 'ALWAYS',
+                results: [[path: 'AllureReporting']]
+              ])
+            }
+          }
+        }
+
     }
 }
