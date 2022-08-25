@@ -33,8 +33,9 @@ allure serve AllureReports
 username: alexandranayanzina@gmail.com
 pass:AlexTest2021
 
-
-sh 'python --version'
+### Allure configuration in Jenkins
+1. Manage Jenkins -> Manage Plugins -> Install "Allure" plugin
+2. Manage pipeline -> Global Tool Configuration -> Allure Commandline-> set allure settings
 
 
 
