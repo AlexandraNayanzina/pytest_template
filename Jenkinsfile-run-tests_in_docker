@@ -3,7 +3,14 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh 'docker build --tag pytest_template .'
+            }
+        }
+
+        stage('run') {
+            steps {
                 sh 'docker run -v ${PWD}/allure-results/default/results:/pytest_template/allure-results pytest_template'
+                sh 'pwd'
             }
         }
     }
@@ -15,7 +22,7 @@ pipeline {
                 jdk: '',
                 properties: [],
                 reportBuildPolicy: 'ALWAYS',
-                results: [[path:'${PWD}/allure-results']]
+                results: [[path: 'allure-results/default/results']]
               ])
             }
           }
