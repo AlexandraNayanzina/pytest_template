@@ -47,6 +47,12 @@ docker run \
 
 # Useful info
 
+#### Run Jenkins  
+``` shell
+jenkins-lts
+```  
+
+
 #### Saving and installing packages
 
 ``` shell
@@ -56,7 +62,6 @@ pip freeze > requirements.txt
 # Install all packages from file
 pip install -r requirements.txt
 ```
-
 #### Allure reporting
 1. Install **allure-pytest** modul (create report in JSON format)
 2. Converting JSON filed to HTML report  
@@ -77,11 +82,8 @@ allure serve AllureReports
 ```
 #### Pytest report
 **pytest-html-reporter==0.2.9** lib
-
 #### Allure configuration in Jenkins
 1. Manage Jenkins -> Manage Plugins -> Install "Allure" plugin
 2. Manage pipeline -> Global Tool Configuration -> Allure Commandline-> set allure settings
-
-
 #### Dockerfile  
 [Dockerfile usage](https://docs.docker.com/engine/reference/builder/)
