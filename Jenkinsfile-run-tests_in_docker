@@ -3,11 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh '''
-                    docker run \
-                    -v ${PWD}/allure-results/default/results:/pytest_template/allure-results \
-                    pytest_template
-                '''
+                sh 'docker run -v ${PWD}/allure-results/default/results:/pytest_template/allure-results pytest_template'
             }
         }
     }
