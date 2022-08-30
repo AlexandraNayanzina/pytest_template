@@ -4,7 +4,7 @@ class TestTemplate:
         print()
         print('---------')
         print('Test_001 start')
-        assert 2 * 2 == 5
+        assert 2 * 2 == 4
 
     def test_002(self):
         print()
@@ -22,4 +22,4 @@ class TestTemplate:
         print()
         print('---------')
         print('Test_004 start')
-        assert 2 == 3
+        assert 2 == 2
