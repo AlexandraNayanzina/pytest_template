@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                sh 'docker build --tag pytest_template .'
+            }
+        }
+
+        stage('run') {
+            steps {
+                sh 'docker run -v ${PWD}/allure-results/default/results:/pytest_template/allure-results pytest_template'
+            }
+        }
+    }
+    post('Allure reports') {
+        always {
+            script {
+              allure([
+                includeProperties: true,
+                jdk: '',
+                properties: [],
+                reportBuildPolicy: 'ALWAYS',
+                results: [[path:'${PWD}/allure-results']]
+              ])
+            }
+          }
+    }
+}
