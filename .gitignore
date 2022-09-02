@@ -1,5 +1,5 @@
 /venv/
-/Test_dir/.pytest_cache/
+/tests/.pytest_cache/
 /archive/
 /AllureReports/
 /.idea/workspace.xml

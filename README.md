@@ -1,5 +1,12 @@
 # Usage
 
+
+<span style="color:orange">Sometimes Jenkins pipelines related with operations in Docker do not work properly.  
+In this case try to run Jenkins again with:</span>   
+``` shell  
+jenkins-lts 
+```
+
 ## Docker-compose
 
 #### Build the image  

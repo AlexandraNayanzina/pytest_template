@@ -7,7 +7,7 @@ pipeline {
                     python3 -m venv venv
                     source  venv/bin/activate
                     pip install -r requirements.txt
-                    pytest -v -s --alluredir AllureReports Test_dir
+                    pytest -v -s --alluredir AllureReports tests
                 '''
             }
         }
