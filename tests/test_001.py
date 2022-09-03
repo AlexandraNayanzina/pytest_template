@@ -24,3 +24,9 @@ class TestTemplate:
         print('Test_004 start')
         assert 2 == 2
 
+    def test_005(self):
+        print()
+        print('---------')
+        print('Test_005 start')
+        assert 3 == 3
+
